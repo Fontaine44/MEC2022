@@ -2,18 +2,18 @@
 
 ## Answer 5 - Choice of life cycle (2 points)
 
-a) 
+a) Disciplined
 
-b) 
+b) Agile
 
-c) 
+c) Disciplined
 
-d) 
+d) Disciplined
 
-e)
+e) Agile
 
-f) 
+f) Agile
 
-g) 
+g) Disciplined 
 
-h) 
+h) Disciplined
