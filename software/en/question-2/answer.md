@@ -2,14 +2,14 @@
 
 ## Answer 2 - Git (1 points)
 
-a)
+a) Use the git show command.
 
-b) 
+b) Commit your changes and then go look at your friend's branch.
 
-c) 
+c) Use the git clone command.
 
-d)
+d) Wherever you would want the new branch, you just click New branch.
 
-e) 
+e) Use git push command. 
 
-f) 
+f) You can use the merge command. 
