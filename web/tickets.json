@@ -1,0 +1,28 @@
+{
+    "packages": {
+        "package_1": {
+            "display_name": "The Yukon Gold",
+            "price": 150,
+            "description_en": "Full package! Get access to all shows, workshops and discussion panels of the Potato Cloud fest 2023.",
+            "description_fr": "Paquet complet! Ayez accès à tous les spectacles, ateliers et panels de discussion du Potato Cloud fest 2023."
+        },
+        "package_2": {
+            "display_name": "The Russet",
+            "price": 90,
+            "description_en": "With this package, get access to all events of the festival happening before 9PM.",
+            "description_fr": "Avec ce paquet, obtenez accès à tous les événements du festival qui débutent avant 21h."
+        },
+        "package_3": {
+            "display_name": "The Petite Patate",
+            "price": 40,
+            "description_en": "The ideal ticket for families. Gives access to shows before 9PM and all workshops.",
+            "description_fr": "Le billet idéal pour les familles. Donne accès aux spectacles avant 21h et à tous les ateliers."
+        },
+        "package_4": {
+            "display_name": "The Yam",
+            "price": 70,
+            "description_en": "With this package, get access to all events of the festival happening after 5PM.",
+            "description_fr": "Avec ce paquet, obtenez accès à tous les événements du festival qui débutent après 17h."
+        }
+    }
+}
