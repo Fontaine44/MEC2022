@@ -1,1 +1,29 @@
-# TODO
+# docker build -f Dockerfile.prod -t client .
+# docker run --rm -it -p 8000:80 cqi-2023
+
+# STAGE 1: Build
+FROM node:17 AS builder
+
+WORKDIR /app
+
+COPY package*.json ./
+
+RUN yarn install
+
+COPY . .
+
+RUN npm run build
+
+
+# STAGE 2: Run
+FROM nginx:latest
+
+WORKDIR /usr/share/nginx/html
+
+RUN rm -rf ./*
+
+COPY --from=builder /app/dist/cqi-2023 .
+
+ENTRYPOINT ["nginx", "-g", "daemon off;"]
+
+EXPOSE 8000

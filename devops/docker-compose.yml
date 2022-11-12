@@ -1,3 +1,37 @@
-# TODO
+# To build: docker-compose build
+# To run: docker-compose run --rm -it -p 8000:80 client
 
+version: "3.7"
 
+services:
+  client:
+    build: 
+      context: ./client
+      dockerfile: Dockerfile.prod
+    container_name: client
+    ports:
+      - "8000:8000"
+    depends_on:
+      - server
+      - mongo
+    
+  server:
+    build: 
+      context: ./server
+      dockerfile: Dockerfile.prod
+    container_name: server
+    ports:
+      - "3000:3000"
+
+  mongo:
+    image: mongo:latest
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo-db:/data/db
+
+volumes:
+  mongo-db:

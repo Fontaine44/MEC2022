@@ -4,7 +4,7 @@ export const databaseProviders = [
   {
     provide: 'DATABASE_CONNECTION',
     useFactory: (): any => {
-      const databaseUrl = "mongo-db";
+      const databaseUrl = "mongo";
       mongoose.connect(`mongodb://root:root@${databaseUrl}:27017`);
     },
   },
